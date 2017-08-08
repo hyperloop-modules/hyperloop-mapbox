@@ -1,0 +1,5 @@
+{
+  "name": "ti.dynamiclib",
+  "version": "1.0.0",
+  "description": "Plugin to use thrid party dynamic libraries"
+}
