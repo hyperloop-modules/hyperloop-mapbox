@@ -13,7 +13,8 @@ View.prototype.getInstance = function() {
 };
 
 View.prototype.setCenter = function(args) {
-	mapView.setCenterAnimated(CLLocationCoordinate2D(args.latitude, args.longitude), args.animated === undefined ? true : args.animated);
+	var animated = args.animated === undefined ? true : args.animated;
+	mapView.setCenterAnimated(CLLocationCoordinate2D(args.latitude, args.longitude), animated);
 };
 
 module.exports = View;
