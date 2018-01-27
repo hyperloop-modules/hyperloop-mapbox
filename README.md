@@ -1,6 +1,9 @@
 # Ti.MapBox
 
-Use the MapBox SDK in Axway Hyperloop. This module is currently in development and not ready for production, yet!
+Use the MapBox SDK in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
+of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
+
+<img src="example.png" width="800" alt="Mapbox SDK in Appcelerator Hyperloop" />
 
 ## Features
 
