@@ -6,7 +6,6 @@ var mapView,
 
 function View() {
 	mapView = MGLMapView.alloc().initWithFrame(UIScreen.mainScreen.bounds);
-	mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 View.prototype.getInstance = function() {
