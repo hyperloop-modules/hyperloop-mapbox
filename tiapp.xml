@@ -19,18 +19,24 @@
 		<use-app-thinning>true</use-app-thinning>
 		<use-jscore-framework>true</use-jscore-framework>
 		<plist>
-			<dict/>		
+			<dict>
+				        <!-- Mapbox configuration -->
+        				<key>MGLMapboxAccessToken</key>
+        				<string>YOUR_MAPBOX_ACCESS_TOKEN</string>
+        
+        				<!-- General Geolocation permissions -->
+       				 	<key>NSLocationWhenInUseUsageDescription</key>
+       					<string>Can we access your location while using the app?</string>
+      					<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+      					<string>Can we access your location?</string>
+
+			</dict>
 		</plist>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
 	</android>
-	<plugins>
-		<plugin version="2.1.3">hyperloop</plugin>
-		<!-- Remove when Hyperloop 2.2.0 comes out -->
-		<plugin>ti.dynamiclib</plugin>
-	</plugins>
 	<modules>
-		<module version="2.1.3">hyperloop</module>
+		<module>hyperloop</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">false</target>
@@ -38,5 +44,5 @@
 		<target device="iphone">true</target>
 		<target device="mobileweb">false</target>
 	</deployment-targets>
-	<sdk-version>6.1.2.GA</sdk-version>
+	<sdk-version>7.0.1.GA</sdk-version>
 </ti:app>
