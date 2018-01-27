@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>com.axway.mapboxtest</id>
-	<name>TiMapBoxTest</name>
+	<name>TiMapboxTest</name>
 	<version>1.0.0</version>
 	<publisher>not specified</publisher>
 	<url></url>
