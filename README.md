@@ -1,4 +1,4 @@
-# Ti.MapBox
+# Mapbox SDK in Titanium and Hyperloop
 
 Use the MapBox SDK in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
 of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
