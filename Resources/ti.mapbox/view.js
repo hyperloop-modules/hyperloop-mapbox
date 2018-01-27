@@ -2,10 +2,10 @@ var mapView,
 		UIScreen = require('UIKit/UIScreen'),
 		UIViewAutoresizingFlexibleWidth = require('UIKit').UIViewAutoresizingFlexibleWidth,
 		UIViewAutoresizingFlexibleHeight = require('UIKit').UIViewAutoresizingFlexibleHeight,
-		MGLMapView = require('MapBox/MGLMapView');
+		MGLMapView = require('Mapbox/MGLMapView');
 
 function View() {
-	mapView = new MGLMapView.alloc().initWithFrame(UIScreen.mainScreen.bounds);
+	mapView = MGLMapView.alloc().initWithFrame(UIScreen.mainScreen.bounds);
 	mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
