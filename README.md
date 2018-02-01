@@ -11,7 +11,26 @@ of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation fo
 
 ```js
 var MapBox = require('ti.mapbox');
-var mapView = MapBox.createView();
+var mapView = MapBox.createView({
+  region: {
+    latitude: 52.020388,
+    longitude: 9.580078,
+    animated: true
+  }
+});
+
+myWindow.add(mapView.getInstance());
+```
+
+### Annotation
+
+```js
+var annotation = Mapbox.createAnnotation({
+  latitude: 52.020388,
+  longitude: 9.580078
+});
+
+mapView.addAnnotation(annotation.getInstance());
 ```
 
 ## Configuration
@@ -19,15 +38,15 @@ var mapView = MapBox.createView();
 Add the following tags to your plist-section of the tiapp.xml and change `YOUR_MAPBOX_ACCESS_TOKEN` to your
 actual access token
 ```xml
-        <!-- Mapbox configuration -->
-        <key>MGLMapboxAccessToken</key>
-        <string>YOUR_MAPBOX_ACCESS_TOKEN</string>
-        
-        <!-- General Geolocation permissions -->
-        <key>NSLocationWhenInUseUsageDescription</key>
-        <string>Can we access your location while using the app?</string>
-        <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-        <string>Can we access your location?</string>
+<!-- Mapbox configuration -->
+<key>MGLMapboxAccessToken</key>
+<string>YOUR_MAPBOX_ACCESS_TOKEN</string>
+
+<!-- General Geolocation permissions -->
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Can we access your location while using the app?</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Can we access your location?</string>
 ```
 
 ## License
