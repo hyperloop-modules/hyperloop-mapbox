@@ -33,7 +33,7 @@ var annotation = Mapbox.createAnnotation({
 mapView.addAnnotation(annotation.getInstance());
 ```
 
-## Configuration
+## iOS Configuration
 
 Add the following tags to your plist-section of the tiapp.xml and change `YOUR_MAPBOX_ACCESS_TOKEN` to your
 actual access token
@@ -49,6 +49,17 @@ actual access token
 <string>Can we access your location?</string>
 ```
 
+## Android Configuration
+- Place your access token in Resources/android/index.js
+- Run gradle to pull down the necessary android libraries inot platform/android:
+```sh
+gradle getDeps
+```
+- Now build!
+```sh
+ti build -p android
+```
+
 ## License
 
 Apache 2.0
@@ -56,3 +67,4 @@ Apache 2.0
 ## Author
 
 Hans Knöchel (Axway Appcelerator)
+Chris Williams (Axway Appcelerator)
