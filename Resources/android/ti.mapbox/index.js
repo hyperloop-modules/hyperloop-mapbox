@@ -7,7 +7,7 @@ var initialized = false;
 exports.createView = function(args) {
 	// lazily init with access token
 	if (!initialized) {
-		Mapbox.getInstance(new Activity(Ti.Android.currentActivity), "<your access token here>");
+		Mapbox.getInstance(new Activity(Ti.Android.currentActivity), 'YOUR ACCESS TOKEN HERE!');
 		initialized = true;
 	}
 	return new View(args);
