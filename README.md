@@ -50,8 +50,8 @@ actual access token
 ```
 
 ## Android Configuration
-- Place your access token in Resources/android/index.js
-- Run gradle to pull down the necessary android libraries inot platform/android:
+- Place your access token in `Resources/android/ti.mapbox/index.js`
+- Run gradle to pull down the necessary android libraries into `platform/android`:
 ```sh
 gradle getDeps
 ```
