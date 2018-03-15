@@ -20,20 +20,22 @@
 		<use-jscore-framework>true</use-jscore-framework>
 		<plist>
 			<dict>
-				        <!-- Mapbox configuration -->
-        				<key>MGLMapboxAccessToken</key>
-        				<string>YOUR_MAPBOX_ACCESS_TOKEN</string>
-        
-        				<!-- General Geolocation permissions -->
-       				 	<key>NSLocationWhenInUseUsageDescription</key>
-       					<string>Can we access your location while using the app?</string>
-      					<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-      					<string>Can we access your location?</string>
+				<!-- Mapbox configuration -->
+				<key>MGLMapboxAccessToken</key>
+				<string>YOUR_MAPBOX_ACCESS_TOKEN</string>
 
+				<!-- General Geolocation permissions -->
+				<key>NSLocationWhenInUseUsageDescription</key>
+				<string>Can we access your location while using the app?</string>
+				<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+				<string>Can we access your location?</string>
 			</dict>
 		</plist>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest>
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		</manifest>
 	</android>
 	<modules>
 		<module>hyperloop</module>
@@ -42,7 +44,6 @@
 		<target device="android">false</target>
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
-		<target device="mobileweb">false</target>
 	</deployment-targets>
 	<sdk-version>7.0.1.GA</sdk-version>
 </ti:app>
