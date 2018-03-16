@@ -1,11 +1,9 @@
 const UIScreen = require('UIKit/UIScreen');
-const UIViewAutoresizingFlexibleWidth = require('UIKit').UIViewAutoresizingFlexibleWidth;
-const UIViewAutoresizingFlexibleHeight = require('UIKit').UIViewAutoresizingFlexibleHeight;
 const MGLMapView = require('Mapbox/MGLMapView');
 const MGLCoordinateBoundsMake = require('Mapbox').MGLCoordinateBoundsMake;
 const CLLocationCoordinate2DMake = require('CoreLocation').CLLocationCoordinate2DMake;
 
-export default class View {
+export default class MapView {
 	constructor(args) {
 		this.mapView = MGLMapView.alloc().initWithFrame(UIScreen.mainScreen.bounds);
 		

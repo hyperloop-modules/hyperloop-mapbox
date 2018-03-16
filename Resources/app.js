@@ -1,5 +1,5 @@
 // Include our mapbox module (from "ti.mapbox/*.js")
-import Mapbox from 'titanium-mapbox';
+import { MapView, Annotation } from 'titanium-mapbox';
 
 // Create a new window
 const win = Ti.UI.createWindow({
@@ -7,7 +7,7 @@ const win = Ti.UI.createWindow({
 });
 
 // Create a new map
-const mapView = Mapbox.createView({
+const mapView = new MapView({
   region: {
     latitude: 52.020388,
     longitude: 9.580078,
@@ -16,7 +16,7 @@ const mapView = Mapbox.createView({
 });
 
 // Set the coordinate bounds
-mapView.visibleCoordinateBounds ={
+mapView.visibleCoordinateBounds = {
   southWest: {
     latitude: 47.600607,
     longitude: 6.152344
@@ -28,7 +28,7 @@ mapView.visibleCoordinateBounds ={
 };
 
 // Add a new annotation / marker
-mapView.addAnnotation(Mapbox.createAnnotation({
+mapView.addAnnotation(new Annotation({
   latitude: 52.020388,
   longitude: 9.580078,
   title: 'Hyperloop rocks!'
