@@ -3,6 +3,8 @@
 Use the MapBox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
 of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
 
+**Note**: This example uses a classic Titanium project structure. To use it in Alloy, place the `titanium-mapbox` folders in `app/lib/android` and `app/lib/ios`.
+
 <img src="example.jpg" width="800" alt="Mapbox SDK in Appcelerator Hyperloop" />
 
 ## Features
@@ -10,8 +12,9 @@ of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation fo
 ### View
 
 ```js
-var MapBox = require('ti.mapbox');
-var mapView = MapBox.createView({
+import MapBox from 'titanium-mapbox';
+
+const mapView = MapBox.createView({
   region: {
     latitude: 52.020388,
     longitude: 9.580078,
@@ -25,7 +28,7 @@ myWindow.add(mapView.getInstance());
 ### Annotation
 
 ```js
-var annotation = Mapbox.createAnnotation({
+const annotation = Mapbox.createAnnotation({
   latitude: 52.020388,
   longitude: 9.580078
 });
@@ -50,9 +53,9 @@ actual access token
 ```
 
 ## Android Configuration
-1. Place your access token in `Resources/android/ti.mapbox/index.js`
+1. Place your access token in `Resources/android/titanium-mapbox/index.js` (Alloy: `app/lib/android/titanium-mapbox/index.js`)
 2. Ensure you have installed at least Gradle 4.1 by running `brew install gradle` and `brew update gradle`
-3. Run gradle to pull down the necessary android libraries into `platform/android`:
+3. Run gradle to pull down the necessary android libraries into `platform/android` (Alloy: `app/platform/android`):
 ```sh
 gradle getDeps
 ```
