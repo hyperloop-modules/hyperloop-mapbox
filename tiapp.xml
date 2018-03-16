@@ -21,10 +21,6 @@
 		<use-jscore-framework>true</use-jscore-framework>
 		<plist>
 			<dict>
-				<!-- Mapbox configuration -->
-				<key>MGLMapboxAccessToken</key>
-				<string>YOUR_MAPBOX_ACCESS_TOKEN</string>
-
 				<!-- General Geolocation permissions -->
 				<key>NSLocationWhenInUseUsageDescription</key>
 				<string>Can we access your location while using the app?</string>

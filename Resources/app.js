@@ -1,12 +1,14 @@
-// Include our mapbox module (from "ti.mapbox/*.js")
-import { MapView, Annotation } from 'titanium-mapbox';
+import { Mapbox, MapView, Annotation } from 'titanium-mapbox';
+
+// Initialize with your Mapbox access token
+Mapbox.initialize('YOUR_MAPBOX_ACCESS_TOKEN');
 
 // Create a new window
 const win = Ti.UI.createWindow({
   backgroundColor: '#fff'
 });
 
-// Create a new map
+// Create a new map view
 const mapView = new MapView({
   region: {
     latitude: 52.020388,
@@ -27,7 +29,7 @@ mapView.visibleCoordinateBounds = {
   }
 };
 
-// Add a new annotation / marker
+// Add a new annotation
 mapView.addAnnotation(new Annotation({
   latitude: 52.020388,
   longitude: 9.580078,
