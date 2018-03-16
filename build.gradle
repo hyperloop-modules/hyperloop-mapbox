@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+	google()
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:5.5.0'
+}
+
+task getDeps(type: Copy) {
+	from sourceSets.main.runtimeClasspath
+	exclude 'support-*'
+	into 'platform/android/'
+}
