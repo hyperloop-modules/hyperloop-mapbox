@@ -1,12 +1,4 @@
-const View = require('./view');
-const Annotation = require('./annotation');
+import MapView from './mapview';
+import Annotation from './annotation';
 
-const createView = (args) => {
-	return new View(args);
-};
-
-const createAnnotation = (args) => {
-	return new Annotation(args);
-};
-
-export { createView, createAnnotation }
+export { Annotation, MapView }

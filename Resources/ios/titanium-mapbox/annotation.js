@@ -19,4 +19,5 @@ export default class Annotation {
 
 	getInstance() {
 		return this.annotation;
+	}
 }
