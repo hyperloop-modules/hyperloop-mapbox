@@ -57,7 +57,7 @@ gradle getDeps
 ```
 - Now build!
 ```sh
-ti build -p android
+appc run -p android
 ```
 
 ## License
