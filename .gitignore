@@ -1,3 +1,5 @@
 /Pods
 /build
 /.gradle
+/platform/android/*.jar
+/platform/android/*.aar

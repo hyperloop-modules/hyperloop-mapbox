@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primary">#4264fb</color>
+	<color name="primary_dark">#0048d8</color>
+	<color name="accent">#ffffff</color>
+
+	<style name="mapbox" parent="@style/Theme.AppCompat">
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorAccent">@color/accent</item>
+		<item name="android:statusBarColor">@color/primary_dark</item>
+		<item name="android:navigationBarColor">@color/primary</item>
+	</style>
+</resources>
