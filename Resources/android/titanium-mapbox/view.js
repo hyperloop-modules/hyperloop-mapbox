@@ -18,7 +18,7 @@ export default class View {
 		this.mapView = new MapView(new Activity(Ti.Android.currentActivity), options);
 	}
 
-	setVisibleCoordinateBounds(args) {
+	set visibleCoordinateBounds(args) {
 		this.mapView.getMapAsync(new OnMapReadyCallback({
 			onMapReady: (mapboxMap) => {
 				const bounds = LatLngBounds.from(args.northEast.latitude, args.northEast.longitude, args.southWest.latitude, args.southWest.longitude);
