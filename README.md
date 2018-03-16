@@ -1,6 +1,6 @@
 # Mapbox SDK in Titanium and Hyperloop
 
-Use the MapBox SDK in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
+Use the MapBox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
 of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
 
 <img src="example.jpg" width="800" alt="Mapbox SDK in Appcelerator Hyperloop" />
@@ -50,12 +50,13 @@ actual access token
 ```
 
 ## Android Configuration
-- Place your access token in `Resources/android/ti.mapbox/index.js`
-- Run gradle to pull down the necessary android libraries into `platform/android`:
+1. Place your access token in `Resources/android/ti.mapbox/index.js`
+2. Ensure you have installed at least Gradle 4.1 by running `brew install gradle` and `brew update gradle`
+3. Run gradle to pull down the necessary android libraries into `platform/android`:
 ```sh
 gradle getDeps
 ```
-- Now build!
+4. Now build!
 ```sh
 appc run -p android
 ```
@@ -64,7 +65,7 @@ appc run -p android
 
 Apache 2.0
 
-## Author
+## Authors
 
-Hans Knöchel (Axway Appcelerator)
-Chris Williams (Axway Appcelerator)
+- Hans Knöchel (Axway Appcelerator)
+- Chris Williams (Axway Appcelerator)
