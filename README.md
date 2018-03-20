@@ -3,7 +3,7 @@
 Use the Mapbox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not 
 expose all possible API's of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
 
-> **Note**: The examples here are written in ES6 (enable with `<transpile>true</transpile>` in your tiapp.xml).
+> **Note**: The examples here are written in ES6 (enable with `<transpile>true</transpile>` in your tiapp.xml) and Titanium SDK 7.1.0. You can still use it with Titanium 7.0.x and classic ES5 if you want!
 
 <img src="example.jpg" width="800" alt="Mapbox SDK in Axway Hyperloop" />
 
@@ -12,7 +12,7 @@ expose all possible API's of the SDK. See the [official](https://www.mapbox.com/
 ### View
 
 ```js
-import MapBox from 'ti.mapbox');
+import MapBox from 'ti.mapbox';
 const mapView = MapBox.createView({
   region: {
     latitude: 52.020388,
