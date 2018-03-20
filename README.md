@@ -1,17 +1,19 @@
 # Mapbox SDK in Titanium and Hyperloop
 
-Use the MapBox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
-of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
+Use the Mapbox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not 
+expose all possible API's of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
 
-<img src="example.jpg" width="800" alt="Mapbox SDK in Appcelerator Hyperloop" />
+> **Note**: The examples here are written in ES6 (enable with `<transpile>true</transpile>` in your tiapp.xml).
+
+<img src="example.jpg" width="800" alt="Mapbox SDK in Axway Hyperloop" />
 
 ## Features
 
 ### View
 
 ```js
-var MapBox = require('ti.mapbox');
-var mapView = MapBox.createView({
+import MapBox from 'ti.mapbox');
+const mapView = MapBox.createView({
   region: {
     latitude: 52.020388,
     longitude: 9.580078,
@@ -25,7 +27,7 @@ myWindow.add(mapView.getInstance());
 ### Annotation
 
 ```js
-var annotation = Mapbox.createAnnotation({
+const annotation = Mapbox.createAnnotation({
   latitude: 52.020388,
   longitude: 9.580078
 });
