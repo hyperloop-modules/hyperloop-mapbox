@@ -1,11 +1,11 @@
 # Mapbox SDK in Titanium and Hyperloop
 
-Use the Mapbox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not expose all possible API's
-of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
+Use the Mapbox SDK (iOS and Android) in Axway Hyperloop! This is an example of using the SDK, so this does not 
+expose all possible API's of the SDK. See the [official](https://www.mapbox.com/ios-sdk/) documentation for details.
 
-**Note**: This example uses a classic Titanium project structure. To use it in Alloy, place the `titanium-mapbox` folders in `app/lib/android` and `app/lib/ios`.
+> **Note**: The examples here are written in ES6 (enable with `<transpile>true</transpile>` in your tiapp.xml) and Titanium SDK 7.1.0. You can still use it with Titanium 7.0.x and classic ES5 if you want!
 
-<img src="example.jpg" width="800" alt="Mapbox SDK in Appcelerator Hyperloop" />
+<img src="example.jpg" width="800" alt="Mapbox SDK in Axway Hyperloop" />
 
 ## Initialize
 
